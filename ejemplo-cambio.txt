@@ -1,0 +1,4 @@
+Este es un archivo de ejemplo para probar el sistema de gestión de cambios en Git.
+
+Fecha de creación: 2026-07-09
+Propósito: Probar hooks y skills de Kiro

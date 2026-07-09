@@ -1,0 +1,93 @@
+{
+  "name": "git-changes-skill",
+  "displayName": "Git Changes Manager",
+  "description": "Skill para gestionar cambios en Git cuando se completa una tarea",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "git-status",
+      "description": "Muestra el estado actual del repositorio Git",
+      "action": "runCommand",
+      "command": "git status"
+    },
+    {
+      "name": "git-add",
+      "description": "Agrega cambios al staging area",
+      "action": "runCommand",
+      "command": "git add {{args}}",
+      "parameters": [
+        {
+          "name": "args",
+          "description": "Patrón de archivos a agregar (ej: '.' para todos, 'src/' para carpeta src)",
+          "required": false,
+          "default": "."
+        }
+      ]
+    },
+    {
+      "name": "git-commit",
+      "description": "Crea un commit con los cambios staged",
+      "action": "runCommand",
+      "command": "git commit -m \"{{message}}\"",
+      "parameters": [
+        {
+          "name": "message",
+          "description": "Mensaje del commit",
+          "required": false,
+          "default": "Auto-commit: cambios completados"
+        }
+      ]
+    },
+    {
+      "name": "git-complete-task",
+      "description": "Completa una tarea agregando y confirmando cambios",
+      "action": "sequence",
+      "steps": [
+        {
+          "action": "askAgent",
+          "prompt": "Primero voy a mostrar el estado actual de Git para que revises los cambios."
+        },
+        {
+          "action": "runCommand",
+          "command": "git status"
+        },
+        {
+          "action": "askAgent",
+          "prompt": "Ahora voy a agregar todos los cambios al staging area."
+        },
+        {
+          "action": "runCommand",
+          "command": "git add ."
+        },
+        {
+          "action": "askAgent",
+          "prompt": "Finalmente, voy a crear un commit con el mensaje proporcionado."
+        },
+        {
+          "action": "runCommand",
+          "command": "git commit -m \"{{message}}\""
+        },
+        {
+          "action": "askAgent",
+          "prompt": "Tarea completada. Los cambios han sido agregados y confirmados en Git."
+        }
+      ],
+      "parameters": [
+        {
+          "name": "message",
+          "description": "Mensaje del commit",
+          "required": false,
+          "default": "Auto-commit: tarea completada"
+        }
+      ]
+    }
+  ],
+  "triggers": [
+    {
+      "event": "postTaskExecution",
+      "action": "runCommand",
+      "command": "git add . && git commit -m \"Auto-commit: tarea completada\"",
+      "description": "Autocommit después de completar una tarea"
+    }
+  ]
+}

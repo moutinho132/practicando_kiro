@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Auto Git después de tarea",
+  "description": "Agrega y confirma cambios en Git automáticamente cuando se completa una tarea",
+  "version": "1",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git add . && git commit -m \"Auto-commit: tarea completada $(Get-Date -Format 'yyyy-MM-dd HH:mm')\"",
+    "timeout": 30
+  }
+}
