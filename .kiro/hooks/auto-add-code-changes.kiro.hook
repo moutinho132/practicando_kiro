@@ -1,0 +1,32 @@
+{
+  "enabled": true,
+  "name": "Auto-add en cambios de código",
+  "description": "Agrega automáticamente archivos modificados de código al staging area",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.js",
+      "*.ts",
+      "*.py",
+      "*.java",
+      "*.cpp",
+      "*.c",
+      "*.cs",
+      "*.go",
+      "*.rs",
+      "*.php",
+      "*.rb",
+      "*.md",
+      "*.txt",
+      "*.json",
+      "*.yml",
+      "*.yaml"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git add \"{{filePath}}\"",
+    "timeout": 10
+  }
+}

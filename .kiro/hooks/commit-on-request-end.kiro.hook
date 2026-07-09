@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Commit al finalizar solicitud",
+  "description": "Detecta cuando el usuario indica que ha terminado una solicitud y ofrece hacer commit",
+  "version": "1",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Detecté que el usuario ha indicado que terminó una solicitud o cumplió requerimientos. Revisemos los cambios actuales en Git y consideremos hacer commit.\n\nComandos disponibles:\n1. git status - para ver cambios actuales\n2. git add . - para agregar todos los cambios\n3. git commit -m \"mensaje\" - para confirmar con mensaje específico\n\n¿Quieres que proceda con alguno de estos comandos o prefieres hacerlo manualmente?"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Revisar cambios antes de commit",
+  "description": "Muestra cambios y pregunta si quieres hacer commit después de completar tarea",
+  "version": "1",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Acabo de completar una tarea. Primero voy a mostrar el estado actual de Git:\n\n1. Ejecutaré: git status\n2. Luego preguntaré si quieres agregar todos los cambios\n3. Si aceptas, haré git add . \n4. Finalmente, crearé un commit con mensaje descriptivo\n\n¿Quieres proceder con este flujo? Puedo usar un mensaje genérico o puedes proporcionar uno específico para este commit."
+  }
+}
