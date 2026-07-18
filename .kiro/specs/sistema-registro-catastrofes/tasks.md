@@ -30,7 +30,7 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 
 #### Tarea 1.4: Configurar Spring Security básico
 - [x] Agregar dependencia spring-boot-starter-security
-- [ ] Crear clase SecurityConfig con configuración inicial
+- [x] Crear clase SecurityConfig con configuración inicial
 - [ ] Deshabilitar CSRF para API REST
 - [ ] Configurar sesiones stateless
 - [ ] Crear enum Role con roles: RESCATISTA, FAMILIAR, ADMIN
