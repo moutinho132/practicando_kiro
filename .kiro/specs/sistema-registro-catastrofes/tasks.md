@@ -34,7 +34,7 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 - [x] Deshabilitar CSRF para API REST
 - [x] Configurar sesiones stateless
 - [x] Crear enum Role con roles: RESCATISTA, FAMILIAR, ADMIN
-- [ ] Configurar permisos básicos por endpoint
+- [x] Configurar permisos básicos por endpoint
 
 ### Frontend
 

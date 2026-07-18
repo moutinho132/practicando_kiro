@@ -47,24 +47,57 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             )
             
-            // Configurar autorización de endpoints
+            // Configurar autorización de endpoints según especificación
             .authorizeHttpRequests(auth -> auth
-                // Endpoints públicos
-                .requestMatchers(
-                    "/api/v1/auth/**",
-                    "/api/v1/busqueda/**",
-                    "/api/v1/familiares",
-                    "/api/v1/fotos",
-                    "/h2-console/**"
-                ).permitAll()
+                // ========== ENDPOINTS PÚBLICOS ==========
+                // Autenticación
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/auth/login").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/auth/refresh").authenticated()
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/auth/register").hasRole("ADMIN")
                 
-                // Endpoints que requieren rol ADMIN
+                // Búsqueda pública
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/busqueda/**").permitAll()
+                
+                // Registro de familiares (público)
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/familiares").permitAll()
+                
+                // Subir fotos (público)
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/fotos").permitAll()
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/fotos/**").permitAll()
+                
+                // Consola H2 (solo desarrollo)
+                .requestMatchers("/h2-console/**").permitAll()
+                
+                // ========== ENDPOINTS DE PERSONAS ==========
+                // Crear persona - RESCATISTA
+                .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/v1/personas").hasRole("RESCATISTA")
+                
+                // Obtener persona por ID - RESCATISTA, ADMIN
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/personas/{id}").hasAnyRole("RESCATISTA", "ADMIN")
+                
+                // Actualizar estado de persona - RESCATISTA
+                .requestMatchers(org.springframework.http.HttpMethod.PUT, "/api/v1/personas/{id}/estado").hasRole("RESCATISTA")
+                
+                // Búsqueda avanzada de personas - RESCATISTA
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/personas/buscar").hasRole("RESCATISTA")
+                
+                // Eliminación lógica - ADMIN
+                .requestMatchers(org.springframework.http.HttpMethod.DELETE, "/api/v1/personas/{id}").hasRole("ADMIN")
+                
+                // Restaurar persona eliminada - ADMIN
+                .requestMatchers(org.springframework.http.HttpMethod.PUT, "/api/v1/personas/{id}/restaurar").hasRole("ADMIN")
+                
+                // ========== ENDPOINTS DE FAMILIARES ==========
+                // Obtener familiar por ID - RESCATISTA, ADMIN
+                .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/v1/familiares/{id}").hasAnyRole("RESCATISTA", "ADMIN")
+                
+                // Actualizar datos de familiar - FAMILIAR, ADMIN
+                .requestMatchers(org.springframework.http.HttpMethod.PUT, "/api/v1/familiares/{id}").hasAnyRole("FAMILIAR", "ADMIN")
+                
+                // ========== ENDPOINTS ADMIN ==========
                 .requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
                 
-                // Endpoints que requieren autenticación con cualquier rol
-                .requestMatchers("/api/v1/rescatistas/**").hasAnyRole("ADMIN", "RESCATISTA")
-                .requestMatchers("/api/v1/personas/**").hasAnyRole("ADMIN", "RESCATISTA", "FAMILIAR")
-                
+                // ========== ENDPOINTS GENERALES ==========
                 // Cualquier otra solicitud requiere autenticación
                 .anyRequest().authenticated()
             )
