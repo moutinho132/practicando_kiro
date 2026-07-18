@@ -33,7 +33,7 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 - [x] Crear clase SecurityConfig con configuración inicial
 - [x] Deshabilitar CSRF para API REST
 - [x] Configurar sesiones stateless
-- [ ] Crear enum Role con roles: RESCATISTA, FAMILIAR, ADMIN
+- [x] Crear enum Role con roles: RESCATISTA, FAMILIAR, ADMIN
 - [ ] Configurar permisos básicos por endpoint
 
 ### Frontend
