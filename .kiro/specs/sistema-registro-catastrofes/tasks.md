@@ -32,7 +32,7 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 - [x] Agregar dependencia spring-boot-starter-security
 - [x] Crear clase SecurityConfig con configuración inicial
 - [x] Deshabilitar CSRF para API REST
-- [ ] Configurar sesiones stateless
+- [x] Configurar sesiones stateless
 - [ ] Crear enum Role con roles: RESCATISTA, FAMILIAR, ADMIN
 - [ ] Configurar permisos básicos por endpoint
 
