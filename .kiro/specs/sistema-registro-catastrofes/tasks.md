@@ -11,25 +11,25 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 ### Backend
 
 #### Tarea 1.1: Inicializar proyecto Spring Boot
-- [ ] Crear proyecto Spring Boot con Java 17
-- [ ] Configurar Maven con dependencias necesarias
-- [ ] Configurar application.yml con perfiles (dev, test, prod)
-- [ ] Verificar que la aplicación inicia correctamente
+- [x] Crear proyecto Spring Boot con Java 17
+- [x] Configurar Maven con dependencias necesarias
+- [x] Configurar application.yml con perfiles (dev, test, prod)
+- [x] Verificar que la aplicación inicia correctamente
 
 #### Tarea 1.2: Configurar estructura de paquetes hexagonal
-- [ ] Crear estructura de paquetes: domain, port, adapter, application, config
-- [ ] Documentar la responsabilidad de cada paquete en README interno
-- [ ] Crear paquetes para submódulos (in/out dentro de port y adapter)
+- [x] Crear estructura de paquetes: domain, port, adapter, application, config
+- [x] Documentar la responsabilidad de cada paquete en README interno
+- [x] Crear paquetes para submódulos (in/out dentro de port y adapter)
 
 #### Tarea 1.3: Configurar base de datos H2
-- [ ] Agregar dependencia H2 en pom.xml
-- [ ] Configurar datasource H2 en memoria en application.yml
-- [ ] Habilitar consola H2 en modo desarrollo
-- [ ] Crear archivo data.sql con usuario admin inicial
-- [ ] Verificar conexión desde consola H2
+- [x] Agregar dependencia H2 en pom.xml
+- [x] Configurar datasource H2 en memoria en application.yml
+- [x] Habilitar consola H2 en modo desarrollo
+- [x] Crear archivo data.sql con usuario admin inicial
+- [x] Verificar conexión desde consola H2
 
 #### Tarea 1.4: Configurar Spring Security básico
-- [ ] Agregar dependencia spring-boot-starter-security
+- [x] Agregar dependencia spring-boot-starter-security
 - [ ] Crear clase SecurityConfig con configuración inicial
 - [ ] Deshabilitar CSRF para API REST
 - [ ] Configurar sesiones stateless
@@ -425,13 +425,13 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 
 | Fase | Total Tareas | Pendientes | En Progreso | Completadas |
 |------|--------------|------------|-------------|-------------|
-| Fase 1 | 7 | 7 | 0 | 0 |
+| Fase 1 | 7 | 4 | 0 | 3 |
 | Fase 2 | 10 | 10 | 0 | 0 |
 | Fase 3 | 9 | 9 | 0 | 0 |
 | Fase 4 | 9 | 9 | 0 | 0 |
 | Fase 5 | 9 | 9 | 0 | 0 |
 | Adicionales | 6 | 6 | 0 | 0 |
-| **Total** | **50** | **50** | **0** | **0** |
+| **Total** | **50** | **47** | **0** | **3** |
 
 ---
 
