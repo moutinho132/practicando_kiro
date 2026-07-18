@@ -1,0 +1,10 @@
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/application/PersonaService.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/adapter/out/persistence/PersonaRepositoryAdapter.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/adapter/in/web/PersonaController.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/domain/Persona.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/config/JpaConfig.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/RegistroPersonasApplication.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/adapter/out/persistence/PersonaJpaEntity.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/port/out/PersonaRepositoryPort.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/domain/EstadoPersona.java
+/Users/fernandomoutinho/Documents/practicando_kiro/backend/src/main/java/com/catastrofes/registro/port/in/RegistrarPersonaUseCase.java

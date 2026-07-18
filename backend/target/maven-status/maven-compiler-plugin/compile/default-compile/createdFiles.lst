@@ -1,0 +1,10 @@
+com/catastrofes/registro/adapter/in/web/PersonaController.class
+com/catastrofes/registro/port/in/RegistrarPersonaUseCase.class
+com/catastrofes/registro/adapter/out/persistence/PersonaRepositoryAdapter.class
+com/catastrofes/registro/adapter/out/persistence/PersonaJpaEntity.class
+com/catastrofes/registro/application/PersonaService.class
+com/catastrofes/registro/domain/EstadoPersona.class
+com/catastrofes/registro/RegistroPersonasApplication.class
+com/catastrofes/registro/config/JpaConfig.class
+com/catastrofes/registro/port/out/PersonaRepositoryPort.class
+com/catastrofes/registro/domain/Persona.class
