@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Auto Git después de tarea",
   "description": "Agrega y confirma cambios en Git automáticamente cuando se completa una tarea",
   "version": "1",

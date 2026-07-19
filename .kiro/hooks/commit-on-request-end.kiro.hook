@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Commit al finalizar solicitud",
   "description": "Detecta cuando el usuario indica que ha terminado una solicitud y ofrece hacer commit",
   "version": "1",
