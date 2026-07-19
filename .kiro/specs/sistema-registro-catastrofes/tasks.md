@@ -149,71 +149,71 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 ### Backend - Entidades JPA
 
 #### Tarea 3.1: Crear entidades JPA
-- [ ] Crear PersonaJpaEntity con todas las anotaciones
-- [ ] Crear FamiliarJpaEntity
-- [ ] Crear UsuarioJpaEntity
-- [ ] Crear UbicacionJpaEntity
-- [ ] Crear RasgosFisicosJpaEntity
-- [ ] Crear RegistroViviendaJpaEntity
-- [ ] Crear HistorialEstadoJpaEntity
-- [ ] Crear AuditoriaJpaEntity
-- [ ] Crear NotificacionJpaEntity
+- [x] Crear PersonaJpaEntity con todas las anotaciones
+- [x] Crear FamiliarJpaEntity
+- [x] Crear UsuarioJpaEntity
+- [x] Crear UbicacionJpaEntity
+- [x] Crear RasgosFisicosJpaEntity
+- [x] Crear RegistroViviendaJpaEntity
+- [x] Crear HistorialEstadoJpaEntity
+- [x] Crear AuditoriaJpaEntity
+- [x] Crear NotificacionJpaEntity
 
 #### Tarea 3.2: Configurar relaciones JPA
-- [ ] Configurar relación Persona -> Ubicacion (ManyToOne)
-- [ ] Configurar relación Persona -> RasgosFisicos (ManyToOne)
-- [ ] Configurar relación Persona -> Vivienda (ManyToOne)
-- [ ] Configurar relación Familiar -> Persona (ManyToOne)
-- [ ] Configurar relación HistorialEstado -> Persona (ManyToOne)
-- [ ] Configurar relación Notificacion -> Familiar (ManyToOne)
+- [x] Configurar relación Persona -> Ubicacion (ManyToOne)
+- [x] Configurar relación Persona -> RasgosFisicos (ManyToOne)
+- [x] Configurar relación Persona -> Vivienda (ManyToOne)
+- [x] Configurar relación Familiar -> Persona (ManyToOne)
+- [x] Configurar relación HistorialEstado -> Persona (ManyToOne)
+- [x] Configurar relación Notificacion -> Familiar (ManyToOne)
 
 ### Backend - Repositorios
 
 #### Tarea 3.3: Crear repositorios Spring Data JPA
-- [ ] Crear PersonaJpaRepository con métodos de búsqueda
-- [ ] Crear FamiliarJpaRepository
-- [ ] Crear UsuarioJpaRepository
-- [ ] Crear UbicacionJpaRepository
-- [ ] Crear AuditoriaJpaRepository
-- [ ] Crear métodos de búsqueda personalizados (findByCedula, findByEstado, etc.)
+- [x] Crear PersonaJpaRepository con métodos de búsqueda
+- [x] Crear FamiliarJpaRepository
+- [x] Crear UsuarioJpaRepository
+- [x] Crear UbicacionJpaRepository
+- [x] Crear AuditoriaJpaRepository
+- [x] Crear métodos de búsqueda personalizados (findByCedula, findByEstado, etc.)
 
 ### Backend - Mapeadores
 
 #### Tarea 3.4: Crear mapeadores manuales
-- [ ] Crear PersonaMapper con métodos toDomain, toEntity, toResponse
-- [ ] Crear FamiliarMapper
-- [ ] Crear UbicacionMapper
-- [ ] Crear RasgosFisicosMapper
-- [ ] Crear ViviendaMapper
-- [ ] Crear UsuarioMapper
+- [x] Crear PersonaMapper con métodos toDomain, toEntity, toResponse
+- [x] Crear FamiliarMapper
+- [x] Crear UbicacionMapper
+- [x] Crear RasgosFisicosMapper
+- [x] Crear ViviendaMapper
+- [x] Crear UsuarioMapper
 
 ### Backend - Adaptadores de Persistencia
 
 #### Tarea 3.5: Implementar adaptadores de repositorio
-- [ ] Crear PersonaRepositoryAdapter implementando PersonaRepositoryPort
-- [ ] Crear FamiliarRepositoryAdapter implementando FamiliarRepositoryPort
-- [ ] Crear UsuarioRepositoryAdapter implementando UsuarioRepositoryPort
-- [ ] Inyectar repositorios JPA y mapeadores
-- [ ] Implementar métodos CRUD con mapeo
+- [x] Crear PersonaRepositoryAdapter implementando PersonaRepositoryPort
+- [x] Crear FamiliarRepositoryAdapter implementando FamiliarRepositoryPort
+- [x] Crear UsuarioRepositoryAdapter implementando UsuarioRepositoryPort
+- [x] Inyectar repositorios JPA y mapeadores
+- [x] Implementar métodos CRUD con mapeo
 
 ### Backend - Servicios de Aplicación
 
 #### Tarea 3.6: Implementar casos de uso
-- [ ] Crear PersonaService implementando RegistrarPersonaUseCase
-- [ ] Crear FamiliarService implementando RegistrarFamiliarUseCase
-- [ ] Crear BusquedaService implementando BuscarPersonaUseCase
-- [ ] Crear UsuarioService implementando GestionarUsuarioUseCase
-- [ ] Agregar lógica de negocio en cada servicio
+- [x] Crear PersonaService implementando RegistrarPersonaUseCase
+- [x] Crear FamiliarService implementando RegistrarFamiliarUseCase
+- [x] Crear BusquedaService implementando BuscarPersonaUseCase
+- [x] Crear UsuarioService implementando GestionarUsuarioUseCase
+- [x] Agregar lógica de negocio en cada servicio
 
 ### Backend - Controladores
 
 #### Tarea 3.7: Crear controladores REST
-- [ ] Crear PersonaController con endpoints CRUD
-- [ ] Crear FamiliarController
-- [ ] Crear BusquedaController para búsqueda pública
-- [ ] Crear AuthController para autenticación
-- [ ] Configurar validación de DTOs
-- [ ] Crear GlobalExceptionHandler para manejo de errores
+- [x] Crear PersonaController con endpoints CRUD
+- [x] Crear FamiliarController
+- [x] Crear BusquedaController para búsqueda pública
+- [x] Crear AuthController para autenticación
+- [x] Configurar validación de DTOs
+- [x] Crear GlobalExceptionHandler para manejo de errores
 
 ### Backend - JWT y Seguridad
 
@@ -427,11 +427,11 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 |------|--------------|------------|-------------|-------------|
 | Fase 1 | 7 | 0 | 0 | 7 |
 | Fase 2 | 10 | 0 | 0 | 10 |
-| Fase 3 | 9 | 9 | 0 | 0 |
+| Fase 3 | 9 | 2 | 0 | 7 |
 | Fase 4 | 9 | 9 | 0 | 0 |
 | Fase 5 | 9 | 9 | 0 | 0 |
 | Adicionales | 6 | 6 | 0 | 0 |
-| **Total** | **50** | **33** | **0** | **17** |
+| **Total** | **50** | **25** | **0** | **25** |
 
 ---
 
