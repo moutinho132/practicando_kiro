@@ -64,61 +64,61 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 ### Backend - Dominio
 
 #### Tarea 2.1: Crear entidades de dominio
-- [ ] Crear clase Persona (record o clase inmutable)
-- [ ] Crear clase PersonaMenor extends Persona
-- [ ] Crear clase FamiliarRegistrado
-- [ ] Crear clase Ubicacion
-- [ ] Crear clase RasgosFisicos
-- [ ] Crear clase RegistroVivienda
-- [ ] Crear clase Auditoria
-- [ ] Crear enum EstadoPersona
+- [x] Crear clase Persona (record o clase inmutable)
+- [x] Crear clase PersonaMenor extends Persona
+- [x] Crear clase FamiliarRegistrado
+- [x] Crear clase Ubicacion
+- [x] Crear clase RasgosFisicos
+- [x] Crear clase RegistroVivienda
+- [x] Crear clase Auditoria
+- [x] Crear enum EstadoPersona
 
 #### Tarea 2.2: Crear excepciones de dominio
-- [ ] Crear PersonaYaRegistradaException
-- [ ] Crear PersonaNoEncontradaException
-- [ ] Crear ValidacionDominioException
-- [ ] Crear FamiliarYaRegistradoException
+- [x] Crear PersonaYaRegistradaException
+- [x] Crear PersonaNoEncontradaException
+- [x] Crear ValidacionDominioException
+- [x] Crear FamiliarYaRegistradoException
 
 #### Tarea 2.3: Crear servicios de dominio
-- [ ] Crear ValidadorPersonaService con validaciones de negocio
-- [ ] Crear ValidadorFamiliarService
-- [ ] Implementar validación de cédula duplicada
-- [ ] Implementar validación de edad para menores
+- [x] Crear ValidadorPersonaService con validaciones de negocio
+- [x] Crear ValidadorFamiliarService
+- [x] Implementar validación de cédula duplicada
+- [x] Implementar validación de edad para menores
 
 ### Backend - Puertos
 
 #### Tarea 2.4: Definir puertos de entrada (Inbound)
-- [ ] Crear interfaz RegistrarPersonaUseCase
-- [ ] Crear interfaz RegistrarFamiliarUseCase
-- [ ] Crear interfaz BuscarPersonaUseCase
-- [ ] Crear interfaz ActualizarEstadoPersonaUseCase
-- [ ] Crear interfaz GestionarUsuarioUseCase
+- [x] Crear interfaz RegistrarPersonaUseCase
+- [x] Crear interfaz RegistrarFamiliarUseCase
+- [x] Crear interfaz BuscarPersonaUseCase
+- [x] Crear interfaz ActualizarEstadoPersonaUseCase
+- [x] Crear interfaz GestionarUsuarioUseCase
 
 #### Tarea 2.5: Definir puertos de salida (Outbound)
-- [ ] Crear interfaz PersonaRepositoryPort
-- [ ] Crear interfaz FamiliarRepositoryPort
-- [ ] Crear interfaz UsuarioRepositoryPort
-- [ ] Crear interfaz NotificacionPort
+- [x] Crear interfaz PersonaRepositoryPort
+- [x] Crear interfaz FamiliarRepositoryPort
+- [x] Crear interfaz UsuarioRepositoryPort
+- [x] Crear interfaz NotificacionPort
 
 ### Backend - DTOs
 
 #### Tarea 2.6: Crear DTOs de petición (Java Records)
-- [ ] Crear PersonaRegistroRequest record
-- [ ] Crear MenorRegistroRequest record
-- [ ] Crear FamiliarRegistroRequest record
-- [ ] Crear BusquedaRequest record
-- [ ] Crear EstadoUpdateRequest record
-- [ ] Crear UbicacionRequest record
-- [ ] Crear RasgosFisicosRequest record
-- [ ] Agregar validaciones Bean Validation (@NotBlank, @NotNull, etc.)
+- [x] Crear PersonaRegistroRequest record
+- [x] Crear MenorRegistroRequest record
+- [x] Crear FamiliarRegistroRequest record
+- [x] Crear BusquedaRequest record
+- [x] Crear EstadoUpdateRequest record
+- [x] Crear UbicacionRequest record
+- [x] Crear RasgosFisicosRequest record
+- [x] Agregar validaciones Bean Validation (@NotBlank, @NotNull, etc.)
 
 #### Tarea 2.7: Crear DTOs de respuesta (Java Records)
-- [ ] Crear PersonaResponse record
-- [ ] Crear FamiliarResponse record
-- [ ] Crear BusquedaResultResponse record
-- [ ] Crear ErrorResponse record
-- [ ] Crear UbicacionResponse record
-- [ ] Crear RasgosFisicosResponse record
+- [x] Crear PersonaResponse record
+- [x] Crear FamiliarResponse record
+- [x] Crear BusquedaResultResponse record
+- [x] Crear ErrorResponse record
+- [x] Crear UbicacionResponse record
+- [x] Crear RasgosFisicosResponse record
 
 ### Frontend - MFE Captura
 
@@ -426,12 +426,12 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 | Fase | Total Tareas | Pendientes | En Progreso | Completadas |
 |------|--------------|------------|-------------|-------------|
 | Fase 1 | 7 | 0 | 0 | 7 |
-| Fase 2 | 10 | 10 | 0 | 0 |
+| Fase 2 | 10 | 0 | 0 | 10 |
 | Fase 3 | 9 | 9 | 0 | 0 |
 | Fase 4 | 9 | 9 | 0 | 0 |
 | Fase 5 | 9 | 9 | 0 | 0 |
 | Adicionales | 6 | 6 | 0 | 0 |
-| **Total** | **50** | **43** | **0** | **7** |
+| **Total** | **50** | **33** | **0** | **17** |
 
 ---
 
