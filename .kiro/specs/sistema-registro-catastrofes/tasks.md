@@ -39,23 +39,23 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 ### Frontend
 
 #### Tarea 1.5: Inicializar proyecto Angular Shell
-- [ ] Crear proyecto Angular con Angular CLI
-- [ ] Configurar TypeScript strict mode
-- [ ] Configurar routing básico en AppModule
-- [ ] Crear ShellComponent como layout principal
+- [x] Crear proyecto Angular con Angular CLI
+- [x] Configurar TypeScript strict mode
+- [x] Configurar routing básico en AppModule
+- [x] Crear ShellComponent como layout principal
 
 #### Tarea 1.6: Configurar Module Federation
-- [ ] Instalar @angular-architects/module-federation
-- [ ] Configurar webpack.config.js para Shell
-- [ ] Crear estructura de proyectos MFE (mfe-captura, mfe-consulta)
-- [ ] Configurar remotes en Shell
-- [ ] Verificar carga lazy de módulos remotos
+- [x] Instalar @angular-architects/module-federation
+- [x] Configurar webpack.config.js para Shell
+- [x] Crear estructura de proyectos MFE (mfe-captura, mfe-consulta)
+- [x] Configurar remotes en Shell
+- [x] Verificar carga lazy de módulos remotos
 
 #### Tarea 1.7: Integrar Bootstrap
-- [ ] Instalar Bootstrap via npm
-- [ ] Configurar estilos globales en angular.json
-- [ ] Crear sistema de diseño con paleta accesible
-- [ ] Crear componentes base: Navbar, Footer, Loading
+- [x] Instalar Bootstrap via npm
+- [x] Configurar estilos globales en angular.json
+- [x] Crear sistema de diseño con paleta accesible
+- [x] Crear componentes base: Navbar, Footer, Loading
 
 ---
 
@@ -425,13 +425,13 @@ Este documento desglosa el trabajo de implementación en tareas específicas, or
 
 | Fase | Total Tareas | Pendientes | En Progreso | Completadas |
 |------|--------------|------------|-------------|-------------|
-| Fase 1 | 7 | 4 | 0 | 3 |
+| Fase 1 | 7 | 0 | 0 | 7 |
 | Fase 2 | 10 | 10 | 0 | 0 |
 | Fase 3 | 9 | 9 | 0 | 0 |
 | Fase 4 | 9 | 9 | 0 | 0 |
 | Fase 5 | 9 | 9 | 0 | 0 |
 | Adicionales | 6 | 6 | 0 | 0 |
-| **Total** | **50** | **47** | **0** | **3** |
+| **Total** | **50** | **43** | **0** | **7** |
 
 ---
 

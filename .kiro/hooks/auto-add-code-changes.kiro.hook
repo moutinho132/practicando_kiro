@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Auto-add en cambios de código",
   "description": "Agrega automáticamente archivos modificados de código al staging area",
   "version": "1",
